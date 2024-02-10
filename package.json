@@ -1,0 +1,22 @@
+{
+  "name": "rakuten-crawler",
+  "description": "Simple and flexible logger",
+  "author": "hidori",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node ./src/index.js login emagazine/rakuten emagazine/shop",
+    "format": "eslint ./src --fix && prettier --write ./src"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "prettier": "^3.2.5"
+  },
+  "dependencies": {
+    "@hidori/playwright-crawler-core": "^0.0.5",
+    "dotenv": "^16.4.1"
+  }
+}
